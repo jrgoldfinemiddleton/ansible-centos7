@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+## Note: the following command will also set up a new role
+## ansible-galaxy init roles/demo
+
 BASEDIR="$(cd "$(dirname "$0")"; pwd)"
 #echo "$BASEDIR"
 
