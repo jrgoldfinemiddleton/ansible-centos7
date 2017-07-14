@@ -1,5 +1,5 @@
 ---
-- include_vars: password_vault.yml
+- include_vars: vault
 
 - name: Ensure group with same name as user exists
   group:
