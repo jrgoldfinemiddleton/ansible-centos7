@@ -23,7 +23,7 @@ for i in defaults files handlers meta tasks templates vars; do
 		mkdir "$i"
 	fi
 
-	if [ $i != files -a $i != templates ]; then
+	if [ $i = handlers -o $i = meta -o $i = tasks ]; then
 #		echo "Creating file '${BASEDIR}/roles/$1/$i/main.yml'..."
 		echo '---' > "$i/main.yml"
 	fi
